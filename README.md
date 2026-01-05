@@ -2,7 +2,7 @@
 
 A cross-platform OpenGL 4.1 tessellation demo showcasing hardware-accelerated Tessellation Control Shaders (TCS) and Tessellation Evaluation Shaders (TES). The demo features a blocky humanoid and tree rendered with configurable tessellation parameters.
 
-![OpenGL Tessellation Demo](https://img.shields.io/badge/OpenGL-4.1-blue) ![.NET](https://img.shields.io/badge/.NET-6.0-purple) ![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey)
+![OpenGL Tessellation Demo](https://img.shields.io/badge/OpenGL-4.1-blue) ![.NET](https://img.shields.io/badge/.NET-8.0-purple) ![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey)
 
 ## Features
 
@@ -105,15 +105,15 @@ tessellation-cs/
 ### Prerequisites
 
 #### All Platforms
-- [.NET 6.0 SDK](https://dotnet.microsoft.com/download/dotnet/6.0) or later
+- [.NET 8.0 SDK](https://dotnet.microsoft.com/download/dotnet/8.0) or later
 
 #### Linux
 ```bash
 # Ubuntu/Debian
-sudo apt-get install dotnet6
+sudo apt-get install dotnet-sdk-8.0
 
 # Fedora
-sudo dnf install dotnet-sdk-6.0
+sudo dnf install dotnet-sdk-8.0
 ```
 
 #### macOS
@@ -166,7 +166,7 @@ dotnet publish -c Release -r linux-x64 --self-contained
 dotnet publish -c Release -r osx-x64 --self-contained
 ```
 
-The published executable will be in `bin/Release/net6.0/<runtime>/publish/`
+The published executable will be in `bin/Release/net8.0/<runtime>/publish/`
 
 ### Quick Start
 
@@ -179,9 +179,9 @@ dotnet run
 
 ### Minimum Requirements
 - **GPU**: OpenGL 4.1 capable graphics card
-- **OS**: Windows 7+, Linux (kernel 4.0+), macOS 10.13+
+- **OS**: Windows 10+, Linux (kernel 4.0+), macOS 10.15+
 - **RAM**: 512 MB
-- **.NET**: 6.0 or later
+- **.NET**: 8.0 or later
 
 ### Tested On
 - ✅ Windows 10/11 (NVIDIA, AMD, Intel)
